@@ -15,7 +15,7 @@ Run `yarn test` to run tests.
 
 ## Basic Requirements
 
-![part1](http://supportfiles/step1.png | width=200)
+![part1](support_files/step1.png | width=200)
 
 ### 1. Create a form that adds images to the page.
   - [ ] Add functionality.
