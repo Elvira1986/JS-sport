@@ -1,21 +1,22 @@
-# Blog
+# Plain JavaScript DOM Manipulations.
 
-In this repository, you will practice manipulating the DOM directly by creating a blog template.
+In this repository, you will practice manipulating the DOM directly by creating a portfolio.
 
 ## Objectives
 
-  - Create a class for a graph data structure.
-  - Create common methods included in a graph.
-  - Practice recursion.
+  - Manipulate the DOM directly through by appending and removing DOM elements.
+  - Use CSS to hide and display elements on the page.
+  - Add event handlers to interact with user actions on the page.
 
 ## Setup
 
-Run `yarn` to install packages.
-Run `yarn test` to run tests.
+Open `index.html` in the browser.
 
 ## Basic Requirements
 
-![part1](support_files/step1.png | width=200)
+_Note: Do not use jQuery for any of this! The purpose of this activity is to make you comfortable with DOM manipulations using plain JavaScript._
+
+![Part 1 Preview](support/step1.jpg)
 
 ### 1. Create a form that adds images to the page.
   - [ ] Add functionality.
@@ -26,23 +27,28 @@ Run `yarn test` to run tests.
     - Everything should be center-aligned.
     - Images should be positioned in a grid pattern so that they appear four across.
 
-### 2. Create a form that adds images to the page.
+![Part 2 Preview](support/step2.jpg)
+
+### 2. Add additional fields to the form.
   - [ ] Add functionality.
-    - This form should accept a URL.
-    - This form should have a "submit" button.
-    - After clicking the button, the image should appear at the top of the page.
+    - Create an input text box for the project title.
+    - Add a larger text box (look up `textarea`) for the project description.
+    - Include this additional information submitted in the elements you have created __but do not show them yet_. Hint: set the styling for title and description to hidden.
   - [ ] Add styling.
-    - Everything should be center-aligned.
-    - Images should be positioned in a grid pattern so that they appear four across.
+    - See image above– title and image filed are on the same line, and project description gets its own line.
+
+![Part 3 Preview](support/step3.jpg)
+
+### 3. Create a featured image section
+  - [ ] Add functionality
+    - Start by using the first image as the featured image.
+    - Clicking on other images should replace the featured image with other images.
+  - [ ] Add styling.
+    - The featured image should be on the left, and the title and description should be on the right. 
 
 
-### 2. Add styling.
-  - [ ] Display the blog posts.
-  - [ ] Display the blog posts.  
-
-### 2. Add styling.
-  - [ ] Display the blog posts.
-  - [ ] Display the blog posts.  
+### 4. Improve styling
+  - [ ] Play with the styling so this looks as professional as possible!
 
 ## Resources
   - [Plain JS - Common DOM Manipulation methods](https://plainjs.com/javascript/manipulation/)
