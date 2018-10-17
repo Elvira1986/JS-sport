@@ -51,8 +51,8 @@ _Note: Do not use jQuery for any of this! The purpose of this activity is to mak
   - [ ] Play with the styling so this looks as professional as possible!
 
 ## Resources
+  - [MDN - Manipulating the DOM Guide](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents)
   - [Plain JS - Common DOM Manipulation methods](https://plainjs.com/javascript/manipulation/)
-  - [Vanilla JS Guide - DOM Manipulation](https://vanillajsguides.com/dom-manipulation/)
   - [Eloquent JavaScript - The DOM](https://eloquentjavascript.net/14_dom.html)
   - [Eloquent JavaScript - Handling Events](https://eloquentjavascript.net/15_event.html)
 
