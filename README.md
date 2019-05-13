@@ -58,4 +58,4 @@ _Note: Do not use jQuery for any of this! The purpose of this activity is to mak
 
 
 ## Notes
-_This is a student project that was created at [Codely](http://codely.tech), a full stack development bootcamp in Barcelona._
+_This is a student project that was created at [CodeOp](http://CodeOp.tech), a full stack development bootcamp in Barcelona._
