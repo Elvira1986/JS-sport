@@ -44,7 +44,7 @@ _Note: Do not use jQuery for any of this! The purpose of this activity is to mak
 ### 3. Create a featured image section
 
 - [ ] Add functionality
-  - If there are no images on the page yet, nothing should be displayed.
+  - If there are no images on the page yet, nothing should be displayed
   - Clicking on any images should show/replace the featured image with other images.
 - [ ] Add styling.
   - The featured image should be on the left, and the title and description should be on the right.
