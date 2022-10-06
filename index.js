@@ -1,9 +1,7 @@
-const demo = window.document.getElementById("demo");
 
-function handleClick() {
-  console.log("button was pressed!");
+function handleSubmit(event) {
+  console.log("form was submitted!");
 }
 
-demo.addEventListener("click", handleClick);
-
-
+const form = document.querySelector("form");
+form.addEventListener("submit", handleSubmit);
