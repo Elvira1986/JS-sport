@@ -82,7 +82,7 @@ _Note: Do not use jQuery for any of this! The purpose of this activity is to mak
 - On your `index.html`:
   - Add a container for your featured project (placed above the image grid container). Give it a unique id as well. 
   - Your container must be further divided in two parts: one on the left for the image and one on the right for the title and description. Create all necessary elements (like title, paragraph, img etc) and leave them empty for now. Add ids to all so you can later `getElementById` and fill those with the featured project information dynamically.
-  - Add all CSS (or Bootstrap) classes you need to each element for everything to display correctly.
+  - Add all CSS (or Bootstrap) classes you need to each element for everything to display correctly. The elements may be empty now but you can use some dummy content to double check the styling and how it will finally look.
 
 - On your `index.js`:
   - Modify the `handleSubmit` method. We want the images to be _clickable_ so you must add a click event listener to each image you create, that will be calling a new method `setFeatured` (that you will create next). 
@@ -90,7 +90,7 @@ _Note: Do not use jQuery for any of this! The purpose of this activity is to mak
   - You must pass this project id as an argument to the new method `setFeatured` when you call it, so that it knows which project is the featured one.
   - Create the `setFeatured` method. This method should get as input the id of the clicked project. Based on this id, the method should search the array of projects to find the chosen project and retrieve all its information (title, description, image URL).
   - Then, still inside `setFeatured` method, select by ID (`getElementById`) the three elements of the featured container (title, image, description) and fill those with the project values.
-
+  - Done!
 
 
 ### 4. Improve styling
