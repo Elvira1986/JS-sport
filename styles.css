@@ -1,3 +1,50 @@
-body {
-  background: #6bc8c9;
+* {
+  box-sizing: border-box;
 }
+
+body {
+  background: #38b6d9;
+}
+
+h2 {
+  border-bottom: 1px solid #666;
+}
+
+#wrapper {
+  width: 800px;
+  margin: 0 auto; /* keeps div horizontally centered */
+  text-align: center;
+}
+
+input {
+  display: block;
+  margin: 0.5em auto;
+}
+
+#thumb-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+#thumb-grid img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
+/* form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+input {
+  display: block;
+  width: 100%;
+}
+
+.span-2-cols {
+  grid-column: 1 / span 2;
+} */
