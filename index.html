@@ -1,31 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
     <div id="wrapper">
       <!-- Beginning of Code -->
-      <h1>Elvira's Portfolio</h1>
+      <h1>My Favorite Sports</h1>
+      <div id="fs-section">
+        <h2>Featured Sport</h2>
+        <div id="fs-sport">
+          <img id="fs-picture" src="" alt="" />
+          <div>
+            <h3 id="fs-name"></h3>
+            <p id="fs-comment"></p>
+          </div>
+        </div>
+      </div>
 
       <div id="thumb-grid"></div>
 
-      <h2>Add New Project</h2>
+      <h2>Add Your Favorite Sport</h2>
       <form>
-        <!-- <label for="name">
-          Project Title
-          <input type="text" id="" name="imgTitle" />
-        </label> -->
-        <label for="name">
-          Image URL
-          <input type="url" id="imageUrl" name="imageUrl" />
+        <label>
+          Sport Type
+          <input type="text" name="title" required />
         </label>
-        <!-- <div class="span-2-cols"> -->
-        <button type="submit">Add Image</button>
-        <!-- </div> -->
+
+        <label>
+          Image URL
+          <input type="url" name="imageUrl" required />
+        </label>
+
+        <label class="span-2-cols">
+          Why do you like it?
+          <textarea name="description" required></textarea>
+        </label>
+
+        <div class="span-2-cols" style="text-align: center">
+          <button type="submit">Submit Sport</button>
+        </div>
       </form>
+      <!-- End of Code -->
     </div>
-    <!-- End of Code -->
     <script type="text/javascript" src="index.js"></script>
   </body>
 </html>

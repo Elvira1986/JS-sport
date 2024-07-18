@@ -3,18 +3,42 @@
 }
 
 body {
-  background: #38b6d9;
+  background: #d6edff;
 }
 
+h1,
+h2,
+#fs-name {
+  color: #4e5786;
+  font-size: 24px;
+  font-family: "Lora", serif;
+}
+h1 {
+  font-size: 40px;
+}
 h2 {
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid #8b95c9;
 }
-
 #wrapper {
-  width: 800px;
+  width: 700px;
   margin: 0 auto; /* keeps div horizontally centered */
   text-align: center;
 }
+
+#fs-section {
+  display: none;
+  padding: 20px;
+}
+
+#fs-sport {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* #fs-picture {
+  height: 200px;
+} */
 
 input {
   display: block;
@@ -27,24 +51,47 @@ input {
   gap: 20px;
 }
 
-#thumb-grid img {
+#thumb-grid img,
+#fs-picture {
   width: 100%;
   height: auto;
   object-fit: cover;
   aspect-ratio: 1 / 1;
 }
 
-/* form {
+form {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  text-align: left;
 }
 
-input {
+input,
+textarea {
   display: block;
   width: 100%;
+  padding: 10px 20px;
+  /* box-sizing: border-box; */
+  border: 1px solid #8b95c9;
+  border-radius: 6px;
+  background-color: #d6edff;
+  font-size: 16px;
+  resize: none;
+}
+
+textarea {
+  height: 150px;
 }
 
 .span-2-cols {
+  /* display: block; */
   grid-column: 1 / span 2;
-} */
+  /* text-align: center; */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #8b95c9;
+  border-radius: 6px;
+  border: 1px solid #8b95c9;
+}

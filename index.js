@@ -11,6 +11,8 @@ https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Robert_Helenius_vs._At
 
 */
 
+let Projects = [];
+let NextProjectId = 1;
 // This will be called when the user presses "Submit"
 function handleSubmit(event) {
   event.preventDefault();
@@ -20,16 +22,54 @@ function handleSubmit(event) {
   let form = event.target;
   // form received the 'submit' event
   let imageUrlValue = form.elements.imageUrl.value;
+  let titleValue = form.elements.title.value;
+  let descriptionValue = form.elements.description.value;
+
+  // Put all the project info in a proj obj and save it (for later)
+  let projObj = {
+    id: NextProjectId,
+    title: titleValue,
+    imageUrl: imageUrlValue,
+    description: descriptionValue,
+  };
+
+  Projects.push(projObj);
+  NextProjectId++; // increment so each project has a unique ID
+
+  console.log(projObj);
 
   // Create a thumbnail
   let thumb = document.createElement("img");
   thumb.src = imageUrlValue;
 
+  // When a sport is clicked on, call the showSport(id) function
+  // We need to pass the sport ID, in parentheses, and therefore showSport()
+  // gets called immediately. Make it an arrow function so that showSport()
+  // will truly be called only when there's a click
+  thumb.addEventListener("click", (event) => showSport(projObj.id));
+
   // append it to the thumb grid
   let grid = document.getElementById("thumb-grid");
   grid.append(thumb);
+
+  // Emty form field
   form.reset();
 }
 
+function showSport(id) {
+  // get the sport obj from Projects
+  let sportObj = Projects.find((p) => p.id === id);
+
+  // Populate the HTML elements in the featured patch <div>
+  document.getElementById("fs-picture").src = sportObj.imageUrl;
+  document.getElementById("fs-name").textContent = sportObj.title;
+  document.getElementById("fs-comment").textContent = sportObj.description;
+
+  // make sure featured sport section is visible
+  document.getElementById("fs-section").style.display = "block";
+}
+
+// Tell form what to do when it receives a 'submit' event
 const form = document.querySelector("form");
+// first form
 form.addEventListener("submit", handleSubmit);
